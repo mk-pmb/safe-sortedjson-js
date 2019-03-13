@@ -1,5 +1,5 @@
 { "name": "safe-sortedjson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "sortedjson, guarded against recursion and some unicode confusion.",
   "keywords": [],
 
@@ -20,10 +20,10 @@
   "directories": { "test": "test" },
 
   "dependencies": {
+    "sortedjson": "^0.1.2",
+    "univeil": "^0.1.14"
   },
   "devDependencies": {
-    "equal-pmb": "^0.1.6",
-    "lib-demo-util-160404": "^0.1.13"
   },
 
 
