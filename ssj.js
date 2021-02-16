@@ -2,19 +2,32 @@
 /* -*- tab-width: 2 -*- */
 'use strict';
 
-var soj = require('sortedjson'), unv = require('univeil');
+var EX, soj = require('sortedjson'), unv = require('univeil');
 
 function circ() { return '[Circular]'; }
 
-function safeSortedJsonify(data, opt) {
+
+EX = function safeSortedJsonify(data, opt) {
   if (!opt) { opt = false; }
   if (!opt.circular) {
     opt = Object.assign({}, opt);
     opt.circular = circ;
   }
-  data = soj(data, opt.replacer, opt.space, opt);
+  var sp = opt.space;
+  if (sp === undefined) {
+    if (opt.mergeNlWsp) { sp = 1; }
+  }
+  data = soj(data, opt.replacer, sp, opt);
+  // console.debug({ ssj: data });
+  if (opt.mergeNlWsp) { data = data.replace(/(?:(,)\n( )|\n)\s*/g, '$1$2'); }
   data = unv(data, '\n');
   return data;
-}
+};
 
-module.exports = safeSortedJsonify;
+
+EX.cfg = function (opt) {
+  return function preconfiguredSafeSortedJson(data) { return EX(data, opt); };
+};
+
+
+module.exports = EX;

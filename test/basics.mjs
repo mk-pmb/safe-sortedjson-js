@@ -22,6 +22,12 @@ equal.lines(ssj(data1, { space: 0 }), [
 ]);
 
 
+equal.lines(ssj(data1, { mergeNlWsp: true }), [
+  '{"bar": 42, "foo": 23, "sub": {"color": "yellow"}}',
+]);
+
+
+
 
 
 

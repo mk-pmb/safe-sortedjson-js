@@ -1,5 +1,5 @@
 { "name": "safe-sortedjson",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "sortedjson, guarded against recursion and some unicode confusion.",
   "keywords": [],
 
