@@ -15,7 +15,7 @@ API
 
 This module exports one function:
 
-### safeSortedJsonify(opts)
+### safeSortedJsonify(data[, opts])
 
 `opts` is an optional options object that supports these keys:
 
