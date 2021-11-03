@@ -3,4 +3,4 @@
 import 'p-fatal';
 import 'usnam-pmb';
 
-import './basics';
+import './basics.mjs';
