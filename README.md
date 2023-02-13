@@ -26,6 +26,7 @@ This module exports one function:
     `'[Circular]'`.
 * `replacer`, `space`: As described in
   [sortedjson](https://www.npmjs.com/package/sortedjson).
+* `undef`: What to return if `(data === undefined)`. Default: `undefined`
 
 
 

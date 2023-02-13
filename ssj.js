@@ -9,6 +9,7 @@ function circ() { return '[Circular]'; }
 
 EX = function safeSortedJsonify(data, opt) {
   if (!opt) { opt = false; }
+  if (data === undefined) { return opt.undef; }
   if (!opt.circular) {
     opt = Object.assign({}, opt);
     opt.circular = circ;

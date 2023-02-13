@@ -27,6 +27,10 @@ equal.lines(ssj(data1, { mergeNlWsp: true }), [
 ]);
 
 
+equal(ssj(undefined), undefined);
+equal(ssj(undefined, { undef: null }), null);
+
+
 
 
 
