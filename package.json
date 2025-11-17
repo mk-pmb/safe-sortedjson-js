@@ -1,5 +1,5 @@
 { "name": "safe-sortedjson",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "sortedjson, guarded against recursion and some unicode confusion.",
   "keywords": [],
 
@@ -20,16 +20,16 @@
   "directories": { "test": "test" },
 
   "dependencies": {
-    "sortedjson": "^0.2.8",
-    "univeil": "^0.1.18"
+    "sortedjson": "^0.2.10",
+    "univeil": "^0.1.19"
   },
   "devDependencies": {
-    "equal-pmb": "^0.1.24",
-    "nodemjs": "^0.1.11",
-    "p-fatal": "^0.1.3",
+    "equal-pmb": "^0.1.29",
+    "nodemjs": "^0.1.16",
+    "p-fatal": "^0.1.5",
     "usnam-pmb": "^0.2.5"
   },
 
 
-  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+  "engines": { "npm": ">=7.0.0", "node": ">=16.0.0" }
 }

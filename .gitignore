@@ -1,6 +1,12 @@
 
 # Auto-generated files:
 /node_modules
+/tmp.*
+
+
+
+# Host-specific files
+/*.@*
 
 
 
